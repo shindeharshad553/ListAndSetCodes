@@ -2,14 +2,12 @@ package MapQuestions;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 
 //create a map add some key value pair and remove the specific key value pair from the map. Print the map before and after removal.
 public class Question5 {
 
 	public static void main(String[] args) {
 		Map<String, String> Employee = new HashMap<>();
-		Scanner sc = new Scanner(System.in);
 		Employee.put("Abhishekh", "Java Developer");
 		Employee.put("Athrav", "Software Developer");
 		Employee.put("Kalpesh", "Cloud Engineer");
@@ -19,7 +17,6 @@ public class Question5 {
 		System.out.println("Before Key removal : " + Employee);
 		Employee.remove("Kalpesh", "Cloud Engineer");// return true or false
 		System.out.println("After key removal : " + Employee);
-		sc.close();
 	}
 
 }
